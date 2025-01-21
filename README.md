@@ -103,14 +103,11 @@ Esta aplicación permite gestionar de manera eficiente el inventario de una tien
  3. **Opdiones de administrador**:
  ![opcionesAdmin](./imagenesJava/opcionesAdmin.png)
 
- 4. **Opción de modificar**:
- ![modificarFormulario](./imagenesJava/modificarFormulario.png)
-
- 5. **Formularios de modificar e insertar producto**:
+ 4. **Formularios de modificar e insertar producto**:
  ![modificarFormulario](./imagenesJava/modificarFormulario.png)
  ![insertaConsola](./imagenesJava/insertaConsola.png)
 
- 6. **Listado de modificar y eliminar producto**:
+ 5. **Listado de modificar y eliminar producto**:
  ![eliminar](./imagenesJava/eliminar.png)
  ![modificarLista](./imagenesJava/modificarLista.png)
 
