@@ -82,44 +82,6 @@ Esta aplicación permite gestionar de manera eficiente el inventario de una tien
 4. **Accede a la aplicación**: Abre tu navegador y dirígete a: http://localhost:8080/gestion-stock-videojuegos.
 
    ---
-   
-## 🛠️ Estructura del Proyecto
-
-   ├── src/
-│   ├── dao/
-│   │   ├── JuegoDAO.java
-│   │   ├── ConsolaDAO.java
-|   |   ├── UsuarioDAO.java
-│   │   └── Conexion.java
-│   ├── modelo/
-│   │   ├── Consola.java
-│   │   ├── Juego.java
-|   |   ├── Producto.java
-│   │   └── Usuario.java
-│   ├── servlets/
-│   │   ├── EjecutaOpcionesAdministradorServlet.java
-│   │   ├── InsertaProdcutosServlet.java
-|   |   ├── ManejaCarritoServlet.java
-|   |   ├── ManejaCatalogos.java
-|   |   ├── ManejaJuegosPorIdServlet.java
-|   |   ├── ManejaLoginResgistroServlet.java
-|   |   ├── ManejaOpcionesAdministradorServlet.java
-│   │   └── ManejaOpcionesUsuarioServlet.java
-│   └── formularios/
-|   |   ├── FormularioOpcionesAdministradorSerlvet.java
-│       └── FormularioInsertarProducto.java
-├── web/
-│   ├── index.html
-│   ├── formularioRegistro.jsp
-│   ├── style.css
-│   ├── styleCatalogo.css
-│   └── WEB-INF/
-│       ├── web.xml
-│       └── lib/
-├── database/
-│   └── schema.sql
-
-   ---
 
 ##  📦 Funcionalidades Principales🛒
 1. **Pantalla Principal**: Acceso a las distintas secciones (consultar consolas, juegos, productos).
