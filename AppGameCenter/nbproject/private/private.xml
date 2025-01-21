@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/servlets/ManejaCatalogos.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/web/index.html</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/servlets/ManejaLoginResgistroServlet.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/dao/UsuarioDAO.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/modelo/Consola.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/formularios/FormularioOpcionesAdministradorSerlvet.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/dao/JuegoDAO.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/servlets/EjecutaOpcionesAdministradorServlet.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/dao/ConsolaDAO.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/web/style.css</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/modelo/Producto.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/web/styleCatalogo.css</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/servlets/InsertaProdcutosServlet.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/formularios/FormularioInsertarProducto.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/servlets/ManejaCarritoServlet.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/modelo/Juego.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/servlets/ManejaJuegosPorIdServlet.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/modelo/Usuario.java</file>
+            <file>file:/C:/Users/Administrator/Documents/NetBeansProjects/AppGameCenter/src/java/servlets/ManejaOpcionesUsuarioServlet.java</file>
+        </group>
+    </open-files>
+</project-private>

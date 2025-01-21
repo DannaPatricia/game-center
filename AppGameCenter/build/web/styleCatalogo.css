@@ -1,0 +1,258 @@
+* {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b2b2b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav p{
+    color: white;
+    font-size: 25px;
+}
+
+form p{
+    color: black ;
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.titulo {
+    font-size: 2rem;
+    color: #4caf50;
+    margin: 1em;
+    flex-grow: 1;
+    text-align: left;
+    width: 10em;
+}
+
+#container-logo-usuarios{
+    display: flex;
+    flex-direction: row;
+    height:4.5em;
+    align-items: center;
+}
+
+/* Nav de usuarios */
+nav[aria-label="ManejaUsuarios"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0.7em 2.5em;
+    background-color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 0 0 20px;
+}
+
+nav[aria-label="ManejaUsuarios"] form{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.opcionUsuario {
+    all:unset;
+    margin: 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    color:black;
+}
+
+.opcionUsuario:hover {
+    color: #4caf50;
+}
+
+
+/* Nav de catálogo */
+nav[aria-label="ManejaCatalogos"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4caf50;
+    top: 0;
+    width: 100%;
+    height:3em;
+    overflow: hidden;
+}
+
+.containerFormulario {
+    display: flex;
+    gap: 2em;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.opcion {
+    padding: 0.55em 4.5em;
+    font-size: 1.20rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #4caf50;
+    transition: background-color 0.3s;
+}
+
+.opcion:hover {
+    background-color: #1c3c1d;
+}
+
+@media (max-width: 768px) {
+    nav[aria-label="ManejaCatalogos"] {
+        display: none;
+    }
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10em auto ;
+    flex: 1;
+    width: 80%;
+}
+
+.formulario{
+    display: flex;
+    margin:2em auto;
+    flex-wrap: wrap;
+    gap:2em;
+}
+
+.elementoContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.elementoContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.elementoContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+
+.nombreElemento, .precio {
+    font-size: 1.2rem;
+    margin: 0.5em 0;
+}
+
+.nombreElemento{
+    font-size: 1.5rem;
+    color: #2b2b2b;
+    font-weight: bold;
+}
+
+.precio{
+    color: #1a6727;
+    font-weight: bold;
+}
+
+.mostrarMas, .añadir-carrito, .opcionAdmin {
+    margin: 0.5em auto;
+    width: 10em;
+    height: 3em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.añadir-carrito, .opcionAdmin{
+    background-color: #49809d;
+}
+
+.mostrarMas:hover {
+    background-color: #2a5d2d;
+}
+
+.añadir-carrito:hover {
+    background-color: #2a5d2d;
+}
+
+.opcionAdmin{
+    background-color: #2a5d2d;
+}
+
+.info-extra{
+    text-align: left;
+    line-height: 1.5em;
+    margin: 0 4em;
+    font-size: 12px;
+    color: #333333;
+}
+
+.contenedorAdmin{
+    display: flex;
+    gap: 3em;
+    margin: 1em auto ;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    border-bottom: 1px solid #1e1d1d;
+    padding-bottom: 1.5em;
+    color: white;
+}
+
+.contenedorAdmin img{
+    width: 6em;
+}
+
+.contenedorAdmin .nombreElemento{
+    color: white;
+}
+
+.textoAdmin{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 1em 0;
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    margin-top: auto;
+}
+
