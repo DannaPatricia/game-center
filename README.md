@@ -93,8 +93,8 @@ Esta aplicación permite gestionar de manera eficiente el inventario de una tien
 
  ##🖼️ Capturas de Pantalla
  1. **Registro y login**:
-![Texto alternativo](./imagesJava/registro.png)
-![Texto alternativo](./imagesJava/login.png)
+![Texto alternativo](./imagenesJava/registro.png)
+![Texto alternativo](./imagenesJava/login.png)
 
  ---
 
