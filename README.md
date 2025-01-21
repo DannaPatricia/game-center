@@ -93,14 +93,33 @@ Esta aplicación permite gestionar de manera eficiente el inventario de una tien
 
  ##🖼️ Capturas de Pantalla
  1. **Registro y login**:
-![Texto alternativo](./imagenesJava/registro.png)
-![Texto alternativo](./imagenesJava/login.png)
+    
+![Registro](./imagenesJava/registro.png)
+![Login](./imagenesJava/login.png)
+
+ 2. **Registro y login**:
+ ![paginaPrincipal](./imagenesJava/paginaPrincipal.png)
+
+ 3. **Opdiones de administrador**:
+ ![opcionesAdmin](./imagenesJava/opcionesAdmin.png)
+
+ 4. **Opción de modificar**:
+ ![modificarFormulario](./imagenesJava/modificarFormulario.png)
+
+ 5. **Formularios de modificar e insertar producto**:
+ ![modificarFormulario](./imagenesJava/modificarFormulario.png)
+ ![insertaConsola](./imagenesJava/insertaConsola.png)
+
+ 6. **Listado de modificar y eliminar producto**:
+ ![eliminar](./imagenesJava/eliminar.png)
+ ![modificarLista](./imagenesJava/modificarLista.png)
 
  ---
 
  ### Próximos Pasos
 
-- **Mejoras en la interfaz:** Añadir un carrito para cada usuario.
+- **Mejoras en el código:** Añadir un carrito para cada usuario.
+- **Mejoras en la interfaz:** Añadir una imagen por consola y por juegos por consola desde la base de datos.
 
 ---
 
