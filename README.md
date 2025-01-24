@@ -1,3 +1,4 @@
+![Estado](https://img.shields.io/badge/Estado-En%20proceso-yellow?style=plastic)
 # 🎮 Game Center
 
 ¡Bienvenido/a! Este repositorio contiene una aplicación web desarrollada en **Java Servlets** y **JSP** para gestionar el stock de una tienda de videojuegos. El proyecto ha sido encargado por **Centro Game** y desarrollado como práctica del módulo **Despliegue de Aplicaciones Web**.
