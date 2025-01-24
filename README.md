@@ -93,9 +93,13 @@ Esta aplicación permite gestionar de manera eficiente el inventario de una tien
 
  ##🖼️ Capturas de Pantalla
  1. **Registro y login**:
-    
-![Registro](./imagenesJava/registro.png)
-![Login](./imagenesJava/login.png)
+
+<div align = "center">
+   <img src = "./imagenesJava/registro.png" alt = "registro">
+</div>
+<div align = "center">
+   <img src = "./imagenesJava/login.png" alt = "login">
+</div>
 
  2. **Registro y login**:
  ![paginaPrincipal](./imagenesJava/paginaPrincipal.png)
@@ -136,5 +140,24 @@ Esta aplicación permite gestionar de manera eficiente el inventario de una tien
 
 ---
 ¡Gracias por tu interés en este proyecto! 🚀
+
+---
+
+## Licencia
+
+Este proyecto está bajo la **Licencia MIT**. Puedes ver el texto completo de la licencia a continuación:
+
+---
+
+MIT License
+
+Copyright (c) [año] [Tu nombre o el de tu organización]
+
+Se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia de este software y los archivos asociados, para utilizarlo sin restricciones, incluyendo sin limitación los derechos de usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del software, y permitir a las personas a las que se les proporcione hacerlo, sujeto a las siguientes condiciones:
+
+El aviso de copyright y este aviso de permiso deberán incluirse en todas las copias o partes sustanciales del software.
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITÁNDOSE A LAS GARANTÍAS DE COMERCIABILIDAD, APTITUD PARA UN FIN PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES POR CUALQUIER RECLAMO, DAÑO O CUALQUIER OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE CUALQUIER OTRA FORMA, QUE SURJA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO O CUALQUIER OTRO TIPO DE ACCIONES EN EL SOFTWARE.
+
  
 
