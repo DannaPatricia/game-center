@@ -2,21 +2,27 @@ package modelo;
 
 import dao.ConsolaDAO;
 
+// La clase Juego extiende de Producto, lo que indica que es un tipo especializado de Producto (un juego en este caso).
 public class Juego extends Producto {
 
-    private String plataforma;
-    private String companiaDesarrolladora;
-    private String genero;
-    private double puntuacionMetacritic;
-    private int consolaId;
+    // Atributos específicos de un juego
+    private String plataforma;            // Plataforma en la que se juega el juego (PC, Xbox, PlayStation, etc.)
+    private String companiaDesarrolladora; // Compañía que desarrolló el juego (Ej. Rockstar Games)
+    private String genero;                // Género del juego (Ej. Shooter, Aventura, RPG, etc.)
+    private double puntuacionMetacritic;  // Puntuación del juego en Metacritic
+    private int consolaId;                // ID de la consola a la que está asociado este juego (relacionado con Consola)
 
+    // Constructor vacío, llama al constructor de la clase base Producto.
     public Juego() {
         super();
     }
 
+    // Constructor que solo inicializa el ID, llamando al constructor de la clase base.
     public Juego(int id) {
         super(id);
     }
+
+    // Getters y setters para los atributos específicos del juego
 
     public String getPlataforma() {
         return plataforma;
@@ -58,18 +64,21 @@ public class Juego extends Producto {
         this.puntuacionMetacritic = puntuacionMetacritic;
     }
 
+    // Método estático para generar un <select> con las plataformas disponibles, obtenidas desde ConsolaDAO
     public static String generaOpcionMultiple() {
         return "<select id=\"plataforma\" name=\"plataforma\">"
-                + ConsolaDAO.generaOpcionMultiple()
+                + ConsolaDAO.generaOpcionMultiple()  // Llama al método de ConsolaDAO para obtener las opciones
                 + "        </select>\n";
     }
 
+    // Método estático para generar un <select> con las plataformas disponibles, con un parámetro de consola adicional
     public static String generaOpcionMultiple(String consola) {
         return "<select id=\"plataforma\" name=\"plataforma\">"
-                + ConsolaDAO.generaOpcionMultiple(consola)
+                + ConsolaDAO.generaOpcionMultiple(consola)  // Llama al método de ConsolaDAO para obtener las opciones con el parámetro 'consola'
                 + "        </select>\n";
     }
 
+    // Muestra la información del juego por consola, incluye detalles como el precio, la compañía y el género.
     public String mostrarInformacionPorConsola() {
         return "<div class=\"elementoContainer\">"
                 + "<img src=\"imagenesConsolas/xboxOne.jpg\" alt=\"xboxOne\">\n"
@@ -83,6 +92,7 @@ public class Juego extends Producto {
                 + "</div>";
     }
 
+    // Muestra una vista más simple del juego con solo nombre, precio y un botón para comprar
     @Override
     public String mostrarInfoParcial() {
         return "<div class=\"elementoContainer\">"
@@ -94,6 +104,7 @@ public class Juego extends Producto {
                 + "</div>";
     }
 
+    // Muestra la información del juego en el panel de administración, permitiendo realizar acciones como modificar, eliminar, etc.
     @Override
     public String mostrarParaAdmin(String opcion) {
         return "<div class=\"contenedorAdmin\">"
@@ -106,6 +117,7 @@ public class Juego extends Producto {
                 + "</div>";
     }
 
+    // Muestra toda la información detallada del juego, incluyendo la plataforma, la compañía desarrolladora, género y la puntuación en Metacritic.
     @Override
     public String mostrarInformacion() {
         return "<div class=\"elementoContainer\">"
@@ -121,16 +133,18 @@ public class Juego extends Producto {
                 + "</div>";
     }
 
+    // Simula la compra del juego, disminuyendo las unidades disponibles
     @Override
     public void comprarProducto() {
         if (unidadesDisponibles > 0) {
-            unidadesDisponibles--;
+            unidadesDisponibles--;  // Disminuye las unidades disponibles
             System.out.println("Compra realizada de " + nombre + ". Unidades disponibles ahora: " + unidadesDisponibles);
         } else {
-            System.out.println("No hay unidades disponibles de " + nombre);
+            System.out.println("No hay unidades disponibles de " + nombre);  // Si no hay unidades disponibles, muestra un mensaje.
         }
     }
 
+    // Genera un formulario HTML para agregar un nuevo juego, con campos para ingresar el nombre, plataforma, compañía, género, puntuación, etc.
     public static String generaContenidoFormulario() {
         StringBuilder html = new StringBuilder();
         html.append(" <div class=\"input-group\">\n"
@@ -139,7 +153,7 @@ public class Juego extends Producto {
                 + "        </div>\n"
                 + "        <div class=\"input-group\">\n"
                 + "            <label for=\"plataforma\">Plataforma:</label>\n"
-                + generaOpcionMultiple()
+                + generaOpcionMultiple()  // Incluye un desplegable de plataformas
                 + "        </div>\n"
                 + "        <div class=\"input-group\">\n"
                 + "            <label for=\"companiaDesarrolladora\">Compañía Desarrolladora:</label>\n"
@@ -164,6 +178,6 @@ public class Juego extends Producto {
                 + "        <div class=\"input-group\">\n"
                 + "            <button type=\"submit\" class=\"btn btn-primary\" name = \"opcionEnviada\" value = \"juego\">Insertar</button>"
                 + "        </div>");
-        return html.toString();
+        return html.toString();  // Devuelve el formulario completo como una cadena HTML
     }
 }
