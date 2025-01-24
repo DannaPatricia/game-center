@@ -1,6 +1,6 @@
 # 🎮 Game Center
 
-¡Bienvenido/a! Este repositorio contiene una aplicación web desarrollada en **Java Servlets** y **JSP** para gestionar el stock de una tienda de videojuegos. El proyecto ha sido encargado por **Centro Game** y desarrollado como práctica del módulo **Despliegue de Aplicaciones Web** en el I.E.S. DOMENICO SCARLATTI.
+¡Bienvenido/a! Este repositorio contiene una aplicación web desarrollada en **Java Servlets** y **JSP** para gestionar el stock de una tienda de videojuegos. El proyecto ha sido encargado por **Centro Game** y desarrollado como práctica del módulo **Despliegue de Aplicaciones Web**.
 
 ---
 
