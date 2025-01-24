@@ -13,35 +13,46 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 /**
- *
- * @author Administrator
+ * Servlet que gestiona las opciones disponibles para un administrador en el sistema.
+ * Permite mostrar un formulario con opciones para insertar, modificar o eliminar productos.
  */
 public class FormularioOpcionesAdministradorSerlvet extends HttpServlet {
 
     /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * Método para procesar las solicitudes tanto de tipo GET como POST.
+     * Valida que el usuario sea un administrador antes de mostrar las opciones.
+     * 
+     * @param request Servlet request
+     * @param response Servlet response
+     * @throws ServletException Si ocurre un error específico del servlet
+     * @throws IOException Si ocurre un error de entrada/salida
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+
+        // Verifica si la sesión es válida y si el usuario es un administrador
         HttpSession session = obtenerSesionValida(request, response);
         if (session == null || !"administrador".equals(session.getAttribute("rol"))) {
-            response.sendRedirect("index.html");
+            response.sendRedirect("index.html");  // Si no es administrador, redirige a la página de inicio
             return;
         }
+        
         try (PrintWriter out = response.getWriter()) {
-            out.println(generaFormulario());
+            out.println(generaFormulario());  // Genera y envía el formulario HTML para mostrar las opciones
         }
     }
 
+    /**
+     * Genera el contenido HTML del formulario de opciones para el administrador.
+     * Incluye botones para insertar, modificar y eliminar productos.
+     * 
+     * @return El código HTML que representa el formulario de opciones.
+     */
     private String generaFormulario() {
         StringBuilder html = new StringBuilder();
+        
+        // Empieza a construir el formulario HTML
         html.append("<!DOCTYPE html>\n"
                 + "<html lang=\"en\">\n"
                 + "    <head>\n"
@@ -76,55 +87,66 @@ public class FormularioOpcionesAdministradorSerlvet extends HttpServlet {
                 + "        </footer>\n"
                 + "    </body>\n"
                 + "</html>");
-        return html.toString();
+        
+        return html.toString();  // Devuelve el código HTML completo
     }
 
+    /**
+     * Obtiene la sesión del usuario y valida que esté autenticado.
+     * Si la sesión no es válida, redirige al usuario a la página de inicio.
+     * 
+     * @param request Servlet request
+     * @param response Servlet response
+     * @return La sesión del usuario si es válida, o null si no lo es.
+     * @throws IOException Si ocurre un error de entrada/salida
+     */
     private HttpSession obtenerSesionValida(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession(false);  // Obtiene la sesión sin crear una nueva
         if (session == null || session.getAttribute("usuarioId") == null) {
-            response.sendRedirect("index.html");
+            response.sendRedirect("index.html");  // Si no hay sesión válida, redirige al inicio
             return null;
         }
-        return session;
+        return session;  // Si la sesión es válida, la retorna
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    // <editor-fold defaultstate="collapsed" desc="Métodos HTTP. Haz clic en el + para editar.">
+
     /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * Maneja las solicitudes GET y delega el procesamiento en el método processRequest.
+     * 
+     * @param request Servlet request
+     * @param response Servlet response
+     * @throws ServletException Si ocurre un error específico del servlet
+     * @throws IOException Si ocurre un error de entrada/salida
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        processRequest(request, response);  // Llama al método de procesamiento de solicitudes
     }
 
     /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * Maneja las solicitudes POST y delega el procesamiento en el método processRequest.
+     * 
+     * @param request Servlet request
+     * @param response Servlet response
+     * @throws ServletException Si ocurre un error específico del servlet
+     * @throws IOException Si ocurre un error de entrada/salida
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        processRequest(request, response);  // Llama al método de procesamiento de solicitudes
     }
 
     /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
+     * Devuelve una breve descripción del servlet.
+     * 
+     * @return Una cadena con la descripción del servlet
      */
     @Override
     public String getServletInfo() {
-        return "Short description";
+        return "Formulario para opciones de administración del catálogo de productos";
     }// </editor-fold>
 
 }
