@@ -93,27 +93,38 @@ Esta aplicación permite gestionar de manera eficiente el inventario de una tien
 
  ##🖼️ Capturas de Pantalla
  1. **Registro y login**:
-
 <div align = "center">
-   <img width = "800px" src = "./imagenesJava/registro.png" alt = "registro">
+   <img width = "850px" src = "./imagenesJava/registro.png" alt = "registro">
 </div>
 <div align = "center">
-   <img width = "300px" src = "./imagenesJava/login.png" alt = "login">
+   <img width = "850px" src = "./imagenesJava/login.png" alt = "login">
 </div>
 
  2. **Registro y login**:
- ![paginaPrincipal](./imagenesJava/paginaPrincipal.png)
+<div align = "center">
+   <img width = "850px" src = "./imagenesJava/paginaPrincipal.png" alt = "paginaPrincipal.png">
+</div>
 
- 3. **Opdiones de administrador**:
- ![opcionesAdmin](./imagenesJava/opcionesAdmin.png)
+ 4. **Opdiones de administrador**:
+<div align = "center">
+   <img width = "850px" src = "./imagenesJava/opcionesAdmin.png" alt = "opcionesAdmin.png">
+</div>
 
- 4. **Formularios de modificar e insertar producto**:
- ![modificarFormulario](./imagenesJava/modificarFormulario.png)
- ![insertaConsola](./imagenesJava/insertaConsola.png)
+ 6. **Formularios de modificar e insertar producto**:
+<div align = "center">
+   <img width = "850px" src = "./imagenesJava/modificarFormulario.png" alt = "modificarFormulario.png">
+</div>
+<div align = "center">
+   <img width = "850px" src = "./imagenesJava/insertaConsola.png" alt = "insertaConsola.png">
+</div>
 
- 5. **Listado de modificar y eliminar producto**:
- ![eliminar](./imagenesJava/eliminar.png)
- ![modificarLista](./imagenesJava/modificarLista.png)
+ 8. **Listado de modificar y eliminar producto**:
+<div align = "center">
+   <img width = "850px" src = "./imagenesJava/eliminar.png" alt = "eliminar.png">
+</div>
+<div align = "center">
+   <img width = "850px" src = "./imagenesJava/modificarLista.png" alt = "modificarLista.png">
+</div>
 
  ---
 
