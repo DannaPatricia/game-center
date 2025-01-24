@@ -95,10 +95,10 @@ Esta aplicación permite gestionar de manera eficiente el inventario de una tien
  1. **Registro y login**:
 
 <div align = "center">
-   <img src = "./imagenesJava/registro.png" alt = "registro">
+   <img width = "300px" src = "./imagenesJava/registro.png" alt = "registro">
 </div>
 <div align = "center">
-   <img src = "./imagenesJava/login.png" alt = "login">
+   <img width = "300px" src = "./imagenesJava/login.png" alt = "login">
 </div>
 
  2. **Registro y login**:
