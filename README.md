@@ -103,28 +103,28 @@ Esta aplicación permite gestionar de manera eficiente el inventario de una tien
 
  2. **Registro y login**:
 <div align = "center">
-   <img width = "850px" src = "./imagenesJava/paginaPrincipal.png" alt = "paginaPrincipal.png">
+   <img width = "850px" src = "./imagenesJava/paginaPrincipal.png" alt = "paginaPrincipal">
 </div>
 
  4. **Opdiones de administrador**:
 <div align = "center">
-   <img width = "850px" src = "./imagenesJava/opcionesAdmin.png" alt = "opcionesAdmin.png">
+   <img width = "850px" src = "./imagenesJava/opcionesAdmin.png" alt = "opcionesAdmin">
 </div>
 
  6. **Formularios de modificar e insertar producto**:
 <div align = "center">
-   <img width = "850px" src = "./imagenesJava/modificarFormulario.png" alt = "modificarFormulario.png">
+   <img width = "850px" src = "./imagenesJava/modificarFormulario.png" alt = "modificarFormulario">
 </div>
 <div align = "center">
-   <img width = "850px" src = "./imagenesJava/insertaConsola.png" alt = "insertaConsola.png">
+   <img width = "850px" src = "./imagenesJava/insertaConsola.png" alt = "insertaConsola">
 </div>
 
  8. **Listado de modificar y eliminar producto**:
 <div align = "center">
-   <img width = "850px" src = "./imagenesJava/eliminar.png" alt = "eliminar.png">
+   <img width = "850px" src = "./imagenesJava/eliminar.png" alt = "eliminar">
 </div>
 <div align = "center">
-   <img width = "850px" src = "./imagenesJava/modificarLista.png" alt = "modificarLista.png">
+   <img width = "850px" src = "./imagenesJava/modificarLista.png" alt = "modificarLista">
 </div>
 
  ---
